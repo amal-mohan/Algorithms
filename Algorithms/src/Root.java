@@ -28,13 +28,16 @@ public class Root {
 			case 1:
 				System.out.println("Press: ");
 				System.out.println("1. Binary Search");
+				System.out.println("2. Linear Search");
 				option=scan.nextInt();
 				switch(option)
 				{
 				case 1: 
 					BinarySearch b=new BinarySearch(scan);
-					b.bSearch();
 					System.out.println("Binary Search Completed");
+					break;
+				case 2:
+					LinearSearch l=new LinearSearch(scan);
 					break;
 				default: System.out.println("Please enter a valid choice");
 				}

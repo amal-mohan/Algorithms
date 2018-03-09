@@ -21,8 +21,10 @@ public class BinarySearch {
 		}
 		System.out.println("Input element to be seached");
 		item=scan.nextInt();
+		bSearch();
 	}
 	
+	//wrapper to call binary search
 	public void bSearch()
 	{
 		int result=bSearcher(0,n-1);
@@ -37,6 +39,7 @@ public class BinarySearch {
 		}
 	}
 	
+	//binary search
 	public int bSearcher(int start, int end)
 	{
 		int mid=(start+end)/2;
